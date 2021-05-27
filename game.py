@@ -21,4 +21,29 @@ computer_choice = random.choice(valid_options)
 print("COMPUTER CHOICE: ", computer_choice)
 
 
+if(computer_choice==user_choice):
+    print("It's a tie!")
+
+elif(computer_choice=="rock"):
+    if(user_choice=="scissors"):
+        print("Rock beats scissors. You lose!")
+    else:
+        print("Paper beats rock. Congrats, you win!")
+
+elif(computer_choice=="paper"):
+    if(user_choice=="scissors"):
+        print("Scissors beat paper. You win!")
+    else:
+        print("Paper beat rock. You lose!")
+
+
+elif(computer_choice=="scissors"):
+    if(user_choice=="paper"):
+        print("Scissors beat paper. You lose!")
+    else:
+        print("Rock beat scissors. You win!")
+
+
+
+
 print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN")
