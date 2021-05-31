@@ -1,9 +1,20 @@
 # game.py
 
 
+import os
 
-print("Rock, Paper, Scissors, Shoot!")
+import dotenv
 
+dotenv.load_dotenv()
+
+
+Player_name = os.getenv("Player_Name")
+print(Player_name)
+
+
+print("--------------------")
+print("Welcome " + Player_name + " to Rock, Paper, Scissors, Shoot!")
+ 
 user_choice=input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 print("USER CHOICE:",user_choice)
@@ -34,7 +45,7 @@ elif(computer_choice=="paper"):
     if(user_choice=="scissors"):
         print("Scissors beat paper. You win!")
     else:
-        print("Paper beat rock. You lose!")
+        print("Paper beats rock. You lose!")
 
 
 elif(computer_choice=="scissors"):
