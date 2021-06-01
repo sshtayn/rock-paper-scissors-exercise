@@ -25,6 +25,6 @@ To run the game:
 ```
 python game.py
 
-Note: when prompted to choose between "rock", "paper" and "scissors" be sure to respond in lower case.
+# Note: when prompted to choose between "rock", "paper" and "scissors" be sure to respond in lower case.
 
 
